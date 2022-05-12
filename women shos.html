@@ -24,22 +24,30 @@
   a{
     text-decoration: none;
   }
- .navigation{
+  .navigation{
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
+    padding:1% 1%;
+    margin-left: 0%;
     align-items: center;
+    width:100%;
     background-color: rgba(2, 168, 168, 0.925);
-    border:1px solid rgba(255, 255, 255, 0.068);
-    font-size: x-large;
-    z-index: 10}
+    border:1px solid rgba(255, 255, 255, 0.068);;
+    z-index: 10;font-size: x-large;}
     .dropbtn {
         color: rgba(255, 255, 255, 0.534);
         padding: 16px;
         font-weight: 500;
         border: none;
       }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
       .dropdown-content {
         display: none;
         position: absolute;
@@ -56,11 +64,11 @@
       }
       .dropdown-content h1{
         padding: 10px 10px;
-          font-size:medium;
+          font-size:small;
       }
       .dropdown-content img{
         padding: 10px 10px;
-        width:300px;
+        width: 300px;
         height: 350px;
         float: right;
       }
@@ -69,37 +77,13 @@
       .dropdown:hover .dropdown-content {display: block;}
       /* The reason for goes down  */
       .dropdown:hover .dropbtn {color: #f031d0;}
-      .dropbtn2 {
-        color: rgba(255, 255, 255, 0.534);
-        border: none;
-      }
-      .dropdown-content2 {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1ee;
-        min-width: 100px;
-      }
-      
-      .dropdown-content2 a {
-        color: black;
-        padding: 10px 10px;
-        text-decoration:none;
-        display: block;
-        font-size: medium;
-      }
-      .dropbtn2:hover {color: #f031d0;}
-      .dropdown-content2 a:hover {color: rgb(100, 93, 93);}
-      .dropdown2:hover .dropdown-content2 {display: block;}
-      /* The reason for goes down  */
-      .dropdown2:hover .dropbtn2 {color: #f031d0;}
-.logo{
+  .logo{
     font-size:50px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-weight: 100;
-
-}
+    font-weight: 100
+  }
   /**/
   .right{
    display: flex;
@@ -282,52 +266,72 @@ footer{
 <body>
     <!-- header --> 
 
-  <div class="navigation">
-        <a href="index0.html" class="logo">FA Stores</a>
-        <a href="index0.html" class="dropbtn">home</a>
-        <div class="dropdown">
-          <a href="index2.html" class="dropbtn">woman</a>
-          <div class="dropdown-content">
-           <img src="https://i.pinimg.com/564x/66/18/ce/6618ce9b8102ed62dc6f611c7d69c474.jpg">
-            <h1>All Products</h1>
-            <a href="women shos.html">shoes</a>
-            <a href="HTML women T-SHIRTS MAIN PAGE.html">t-shirts</a>
-            <a href="women pantallon.html">jeans</a>
-      
-          </div>
+    <div class="navigation">
+      <a href="#" class="logo">logo</a>
+      <a href="#" class="dropbtn">home</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">woman</a>
+        <div class="dropdown-content">
+       <img src="https://i.pinimg.com/564x/66/18/ce/6618ce9b8102ed62dc6f611c7d69c474.jpg">
+          <h1>All Products</h1>
+          <a href="#">dress</a>
+          <a href="#">shoes</a>
+          <a href="#">tops</a>
+          <a href="#">jeans</a>
         </div>
-        <div class="dropdown">
-          <a href="home.html" class="dropbtn">man</a>
-          <div class="dropdown-content">
-            <h1>All Products</h1>
-            <a href="HTML T-SHIRTS MAIN PAGE.html">t-shirt</a>
-            <a href="index3.html">pantallon</a>
-            <a href="menshoes.html">shoes</a>
-          </div>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">man</a>
+        <div class="dropdown-content">
+          <h1>All Products</h1>
+          <a href="#">t-shirts</a>
+          <a href="#">jeans</a>
+          <a href="#">shoes</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <a href="#" class="dropbtn">kids</a>
+        <div class="dropdown-content">
+          <h1>All Products</h1>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+
+      <div class="right"> 
+          <a href="#"><i class="fa fa-fw fa-home"></i> </a> 
+          <a href="#"><i class="fa fa-fw fa-search"></i></a> 
+          <a href="#"><i class="fa fa-fw fa-shopping-bag"></i> </a> 
+          <a href="#"><i class="fa fa-fw fa-user"></i> </a>
+      </div>
+  </div>
         </div> 
-        <div class="dropdown">
-          <a href="kids-mainpage.html" class="dropbtn">kids</a>
-          <div class="dropdown-content">
-            <h1>All Products</h1>
-            <a href="HTML Kids T-Shirts Main Page.html">t-shirt</a>
-            <a href="kids-pantallon.html">pantallon</a>
-            <a href="kids shoes.html">shoes</a>
-          </div>
-        </div> 
-       <div class="right"> 
+        <div class="right"> 
             <a href="#"><i class="fa fa-fw fa-home"></i> </a> 
-            <div class="dropdown2">
-            <a href="#"class="dropbtn2"><i class="fa fa-fw fa-user"></i> </a>
-            <div class="dropdown-content2">
-              <a href="signup.html">sign up</a>
-              <a href="signin.html">sign in</a>
-            </div>
-          </div>
-          <a href="#"><i class="fa fa-fw fa-search"onclick="myFunction()"></i></a> 
-          <a href="HTML Cart.html"><i class="fa fa-fw fa-shopping-bag"></i> </a>
+            <a href="#"><i class="fa fa-fw fa-search"></i></a> 
+            <a href="#"><i class="fa fa-fw fa-shopping-bag"></i> </a> 
+            <a href="#"><i class="fa fa-fw fa-user"></i> </a>
         </div>
-    </div> 
-<input type="text" placeholder="Search.."id="demo" style="display:none">
+    </div>
+    <section class="feature-produc"> 
+        <div class="feature-product-container">
+            <div class="feature-product-box">
+              <a href="w8.html"><div class="product-feature-img">
+                  <img  src="project99.jpg">
+                  <img class="img1" src="project99a.jpg">
+               </div></a> 
+               <div class="product-feature-text-container">
+                   <div class="product-feature-text">
+                       <strong>NULTRABOOST 20 SHOES</strong>
+                       <span>EGP 1374.00</span>
+                   </div>
+                   <div class="cart-like">
+                       <a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a>
+                       <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
             <div class="feature-product-box">
              <a href="w5.html"> <div class="product-feature-img">
                 <img  src="projectj.jpg">
